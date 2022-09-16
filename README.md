@@ -57,7 +57,7 @@ Fig 2. The bikesharing overview. Left, number of rides. Center, the breakdown be
 
 ### Top Starting Locations
 
-The top starting locations for citibike trips was plotted, where larger and darker blue circles indicate greater usage. The most heavily used location(s) originated 16,564 trips during August 2019. Note that each individual station can be distinctly observed.
+The top starting locations for citibike trips were plotted, where larger and darker blue circles indicate greater usage. The most heavily used location(s) originated 16,564 trips during August 2019. Note that each individual station can be distinctly observed.
 
 The greatest number of trips originated in Manhattan. Some high volume stations are found in Hell's Kitchen, Midtown East, the southwest side of Lower Manhattan, and along the southwest side of Central Park. One can see the absence of stations within Central Park.
 
@@ -81,7 +81,7 @@ The frequency of citibike trip durations for all riders in August 2019 was calcu
 ![Average Trip Duration for All Riders](./Resources/Checkout_Times_for_Users.png)
 Fig 5. Average trip duration for all riders. Only trip durations of less than 3 hours are shown. 
 
-Regarding gender, more men ride than women (see also fig. ). Their frequency distributions are almost identical for all riders, as they comprise about 90% of users.
+Regarding gender, more men ride than women (see also fig. 2). Their frequency distributions are almost identical for all riders, as they comprise about 90% of users.
 
 About 10% of users do not specify their gender, and their ride duration frequency distribution is different from that of men and women. The maximum frequency for riders with unknown gender is a broad plateau spanning 7-25 minutes.  
 
