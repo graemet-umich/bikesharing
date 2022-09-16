@@ -17,6 +17,7 @@ This document not a business proposal, but an analysis to be used to support suc
 The data used for this analysis comes from a NYC citibike trip histories CSV file which covers the month of August 2019.
 
 ![NYC citibke trip histories format](./Resources/citibike_trip_histories.png)
+Fig 1. Citibike trip histories column specifications.
 
 
 ### Convert `tripduration` Column
@@ -51,6 +52,7 @@ There are two types of citibike users: customers who get 1 or 3 day passes, and 
 More males (~65%) than females (~25%) use citibikes.
 
 ![NYC Bikesharing Summary Statistics](./Resources/NYC_Bikesharing_Stat_Overview.png)
+Fig 2. The bikesharing overview. Left, number of rides. Center, the breakdown between customers and subscribers. Right, the breakdown by gender.
 
 
 ### Top Starting Locations
@@ -60,6 +62,7 @@ The top starting locations for citibike trips was plotted, where larger and dark
 The greatest number of trips originated in Manhattan. Some high volume stations are found in Hell's Kitchen, Midtown East, the southwest side of Lower Manhattan, and along the southwest side of Central Park. One can see the absence of stations within Central Park.
 
 ![Top Starting Locations](./Resources/Top_Starting_Locations.png)
+Fig 3. Distribution of citibike starting locations.
 
 ### Average Trip Duration by Age
 
@@ -68,34 +71,48 @@ The average trip duration for all ages is roughly 12 - 15 minutes long. Younger 
 Note that someone born in 1940 in this dataset would be 79 years old, so birth years documented before 1940 should be taken with a grain of salt.
 
 ![Average Trip Duration by Age](./Resources/Avg_Trip_Duration_by_Age.png)
+Fig 4. Average distribution of trip duration by age. Note that most data prior to 1940 is invalid.
 
 
 ### Citibike Trip Durations for All Riders and Genders
 
 The frequency of citibike trip durations for all riders in August 2019 was calculated. Most riders rode for 4-7 minutes (mode = 5 minutes), and longer trip durations taper off. There were 146,752 (the maximum) riders who rode for 5 minutes, 5% of the maximum rode for 40 minutes, and 1% of the maximum rode for 55 minutes.
 
-![Average Trip Duration by Age](./Resources/Checkout_Times_for_Users.png)
+![Average Trip Duration for All Riders](./Resources/Checkout_Times_for_Users.png)
+Fig 5. Average trip duration for all riders. Only trip durations of less than 3 hours are shown. 
 
 Regarding gender, more men ride than women (see also fig. ). Their frequency distributions are almost identical for all riders, as they comprise about 90% of users.
 
 About 10% of users do not specify their gender, and their ride duration frequency distribution is different from that of men and women. The maximum frequency for riders with unknown gender is a broad plateau spanning 7-25 minutes.  
 
-![Average Trip Duration by Age](./Resources/Checkout_Times_by_Gender.png)
+![Average Trip Duration by Gender](./Resources/Checkout_Times_by_Gender.png)
+Fig 6. Average trip duration by gender. Only trip durations of less than 3 hours are shown.
+
+### Citibike Trips per Hour per Day of Week for All Riders and Genders
+
+During any given hour on any given day, there are between 360-44,905 citibike rides starting. Weekday peak times are from 8-9 am and 5-7 pm. Weekend peak times are more broad from about 10 am to 7 pm, with more citibikers slightly preferring Sundays. 
+
+There is a noticeable drop in ridership Wednesday evenings from 5-7 pm compared to the other weekdays.
+
+![Trips per Hour per Day for All Riders](./Resources/Trips_by_Weekday_per_Hour.png)
+Fig 7. Heatmap of trips per hour per day.
+
+Once again there are more male citibikers than female. Also, their distributions are similar to that for all riders.
+
+Citibike riders who do not specify their gender appear to ride mostly on weekends with the same late morning to early evening preferences that all riders have.
+
+![Trips per Hour per Day by Gender](./Resources/Trips_by_Weekday_per_Hour_by_Gender.png)
+Fig 8. Heatmap of trips per hour per day by gender.
 
 
-### How many trips are taken by the hour for each day of the week, for all riders and genders
+### Trips per Day of Week by User Type by Gender
 
+Citibike customers appear to ride slightly more on weekends regardless of gender. Also, they ride more on weekends than males or females.
 
+For citibike subscribers, the daily ride distributions are very similar for females and males. Because all subscribers specify their gender, there are no rides with unknown gender.
 
-![Average Trip Duration by Age](./Resources/Trips_by_Weekday_per_Hour.png)
-
-![Average Trip Duration by Age](./Resources/Trips_by_Weekday_per_Hour_by_Gender.png)
-
-
-### A breakdown of what days of the week a user might be more likely to check out a bike, by type of user and gender
-
-
-![Average Trip Duration by Age](./Resources/User_Trips_by_Gender_by_Weekday.png)
+![Trips per Day of Week by User Type by Gender](./Resources/User_Trips_by_Gender_by_Weekday.png)
+Fig 9. Number of trips taken each day of the week by user type (customer or subscriber) by gender.
 
 
 ### Tableau Story
