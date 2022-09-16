@@ -124,4 +124,18 @@ A Tableau story documenting the results can be found here:
 
 ## Summary
 
+New York City is a busy place for citibiking. Each day, on the average, there were over 75,000 rides. Most of the rides occurred in Manhattan (fig. 3).
+
+The majority of rides have a short duration (fig. 5 and fig. 6), most likely because riders use citibikes to cover "the last mile," the distance between subway or train station to place of work. This scenario is supported by the fact that most weekday rides are taken when commuters arrive to and return from work (figs. 7, 8, 9).
+
+There is an interesting departure from normal evening workday riding behavior: there are far fewer rides taken Wednesday evenings (figs. 7, 8, 9). Consulting the historical weather data for August 2019 in New York City (not shown), there were only eight days of thunderstorms, but three of them occurred on the four Wednesdays of the month, which could have substantially hampered riding behavior.
+
+Although fewer females citibike (fig. 2, right), their riding behavior appears indistinguishable from males (figs. 6, 8, 9). 
+
+Riders of unknown gender are only user type customer, because all subscribers must specify their gender (fig. 9), and they have different riding habits: they take longer duration rides (fig. 6), and they ride primarily on weekends (figs. 8, 9). These riders are likely tourists who do not bother to specify their gender when signing up for a 1 or 3 day weekend pass.
+
+Some suggestions for further visualizations involve the distance between starting and ending stations. A distance of zero is a round trip. One visualization would be the distribution of start-end distances as a function of weekday. Another visualization would be the distribution of start-end distances as a function of trip duration. These visualizations may help a bikesharing business understand how best to redistribute bicycles to minimize empty bikesharing stations.
+
+
+
 
